@@ -21,9 +21,7 @@ public class Photo {
     private Long id;
 
     @JsonProperty("albumId")
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "album_id", referencedColumnName = "id", nullable = false)
-    private Album album;
+    private Long albumId;
 
     @JsonProperty("id")
     private Long idPhoto;

@@ -21,9 +21,7 @@ public class Comment {
     private Long id;
 
     @JsonProperty("postId")
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "post_id", referencedColumnName = "id", nullable = false)
-    private Post post;
+    private Long postId;
 
     @JsonProperty("id")
     private Long idComment;

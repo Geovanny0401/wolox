@@ -21,9 +21,7 @@ public class Post {
     private Long id;
 
     @JsonProperty("userId")
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
-    private User user;
+    private Long userId;
 
     @JsonProperty("id")
     private Long idPost;
